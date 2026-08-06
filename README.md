@@ -89,6 +89,6 @@ End
 
 👩‍💻 Author
 
-Swathi J
+Sandhiya s
 
 Java Console Based Capstone Project
