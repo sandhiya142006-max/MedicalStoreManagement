@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# MedicalStoreManagement
+>>>>>>> 7e86bed (Added updated readme)
 💊 Medical Store Management System
 
 📖 Overview
@@ -91,4 +95,8 @@ End
 
 Sandhiya s
 
+<<<<<<< HEAD
 Java Console Based Capstone Project
+=======
+Java Console Based Capstone Project
+>>>>>>> 7e86bed (Added updated readme)
