@@ -103,8 +103,24 @@ public class MedicalStoreManagement {
     }
     break;
                 case 5:
-                    // Delete Medicine (Next Module)
-                    break;
+    System.out.print("Enter Medicine ID to Delete: ");
+    int deleteId = sc.nextInt();
+
+    boolean deleted = false;
+
+    for (int i = 0; i < medicines.size(); i++) {
+        if (medicines.get(i).id == deleteId) {
+            medicines.remove(i);
+            deleted = true;
+            System.out.println("Medicine Deleted Successfully.");
+            break;
+        }
+    }
+
+    if (!deleted) {
+        System.out.println("Medicine Not Found.");
+    }
+    break;
                 case 6:
                     System.out.println("Thank You!");
                     sc.close();
