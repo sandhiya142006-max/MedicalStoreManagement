@@ -78,8 +78,30 @@ public class MedicalStoreManagement {
     }
                     break;
                 case 4:
-                    // Update Medicine (Next Module)
-                    break;
+    System.out.print("Enter Medicine ID to Update: ");
+    int updateId = sc.nextInt();
+
+    boolean updated = false;
+
+    for (Medicine m : medicines) {
+        if (m.id == updateId) {
+
+            System.out.print("Enter New Price: ");
+            m.price = sc.nextDouble();
+
+            System.out.print("Enter New Quantity: ");
+            m.quantity = sc.nextInt();
+
+            System.out.println("Medicine Updated Successfully.");
+            updated = true;
+            break;
+        }
+    }
+
+    if (!updated) {
+        System.out.println("Medicine Not Found.");
+    }
+    break;
                 case 5:
                     // Delete Medicine (Next Module)
                     break;
