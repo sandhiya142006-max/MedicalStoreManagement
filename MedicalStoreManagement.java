@@ -19,9 +19,27 @@ public class MedicalStoreManagement {
             int choice = sc.nextInt();
 
             switch (choice) {
-                case 1:
-                    // Add Medicine (Next Module)
-                    break;
+                    case 1:
+    System.out.print("Enter Medicine ID: ");
+    int id = sc.nextInt();
+    sc.nextLine();
+
+    System.out.print("Enter Medicine Name: ");
+    String name = sc.nextLine();
+
+    System.out.print("Enter Category: ");
+    String category = sc.nextLine();
+
+    System.out.print("Enter Price: ");
+    double price = sc.nextDouble();
+
+    System.out.print("Enter Quantity: ");
+    int quantity = sc.nextInt();
+
+    medicines.add(new Medicine(id, name, category, price, quantity));
+
+    System.out.println("Medicine Added Successfully.");
+    break;
                 case 2:
                     // View Medicines (Next Module)
                     break;
