@@ -41,7 +41,19 @@ public class MedicalStoreManagement {
     System.out.println("Medicine Added Successfully.");
     break;
                 case 2:
-                    // View Medicines (Next Module)
+    if (medicines.isEmpty()) {
+        System.out.println("No Medicines Available.");
+    } else {
+        System.out.println("\nMedicine Details");
+        for (Medicine m : medicines) {
+            System.out.println("----------------------------");
+            System.out.println("ID       : " + m.id);
+            System.out.println("Name     : " + m.name);
+            System.out.println("Category : " + m.category);
+            System.out.println("Price    : " + m.price);
+            System.out.println("Quantity : " + m.quantity);
+        }
+    }
                     break;
                 case 3:
                     // Search Medicine (Next Module)
