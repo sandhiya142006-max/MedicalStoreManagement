@@ -56,7 +56,26 @@ public class MedicalStoreManagement {
     }
                     break;
                 case 3:
-                    // Search Medicine (Next Module)
+    System.out.print("Enter Medicine ID: ");
+    int searchId = sc.nextInt();
+
+    boolean found = false;
+
+    for (Medicine m : medicines) {
+        if (m.id == searchId) {
+            System.out.println("Medicine Found");
+            System.out.println("Name     : " + m.name);
+            System.out.println("Category : " + m.category);
+            System.out.println("Price    : " + m.price);
+            System.out.println("Quantity : " + m.quantity);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        System.out.println("Medicine Not Found.");
+    }
                     break;
                 case 4:
                     // Update Medicine (Next Module)
